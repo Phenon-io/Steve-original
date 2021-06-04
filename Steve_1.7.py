@@ -1,6 +1,8 @@
 #Steve, the helpful python bot
 #version 1.7, yelling at webpages version
-import sys, os, webbrowser, requests
+import sys
+sys.path.append(r"J:\Steveenviron\Scripts\python.exe")
+import os, webbrowser, requests
 import subprocess
 from bs4 import BeautifulSoup
 import tkinter as tk
@@ -8,6 +10,9 @@ from tkinter import *
 from tkinter import messagebox as box
 from tkinter import filedialog
 from time import sleep
+from random import seed
+from random import randint
+
 
 #webbrowser selector for links
 chrome_browser = webbrowser.get("C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s")
@@ -17,10 +22,17 @@ root= tk.Tk()
 results = []
 
 #tk padding
-space1 = tk.Label(root, width=10)
+space1 = tk.Label(root, width=5)
 space1.grid(row=0, column=0)
-space2 = tk.Label(root, width=10)
+space2 = tk.Label(root, width=5)
 space2.grid(row=0, column=2)
+
+#greeting text
+#seed(1)
+#for _ in range (1):
+    #randle = randint(0,3)
+    #if randle = (1):
+        
 
 w = tk.Label(root, text="Hello world, have a beautiful day")
 w.grid(row=0, column=1)
@@ -48,7 +60,6 @@ def fib1():
 #pending implementation
 def goog():
     os.system('Websearch_Module.py')
-    print('This function is pending an update, please try again later')
 
 def ves():
     os.system('python Vessel_Abbr.py')
@@ -81,10 +92,17 @@ def gmp():
         chrome_browser.open_new_tab(link)
         sleep(0.1)
     os.startfile("outlook")
-        
+    try:
+        os.system('C:\\Users\\nwhitehorn\\Desktop\\Pasha^ Control^ Console^ 2.appref-ms')    
+    except Exception as exc: 
+        print ('Unable to boot PEEF, confirm PEEF is in a desktop shortcut location (default) \n %s' % (exc))
     #PCC is in 32 bits, potential server framework issue
     #subprocess.call(['C:\\Users\\nwhitehorn\\Desktop\\Pasha Control Console 2.appref-ms'])
     #subprocess.call(['C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Microsoft Office 2016'])
+    try:
+        os.system('C:\\Program^ Files\\OTA2\\AppStart.exe')    
+    except Exception as exc: 
+        print ('Unable to boot OTA, confirm OTA is in a default location\n %s' % (exc))
 
                      
 
