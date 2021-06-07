@@ -5,6 +5,9 @@
 #current list.
 
 import tkinter as tk
+import sys
+sys.path.append(r"C:\Steveenviron\Scripts\python.exe")
+
 
 
 def callback1():

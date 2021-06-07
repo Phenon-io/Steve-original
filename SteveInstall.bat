@@ -1,6 +1,15 @@
 mkdir PyEnviron\Steveenviron
 py -m venv c:\PyEnviron\Steveenviron
-PyEnviron\Steveenviron\Scripts\activate
-py -m pip install requests
-py -m pip install bs4
-py -m pip install googlesearch-python
+
+pause
+
+:start
+cls
+cd \
+cd C:\PyEnviron\Steveenviron\Scripts
+pip install requests
+pip install bs4
+pip install googlesearch-python
+
+pause
+exit

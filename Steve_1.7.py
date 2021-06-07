@@ -1,7 +1,7 @@
 #Steve, the helpful python bot
 #version 1.7, yelling at webpages version
 import sys
-sys.path.append(r"J:\Steveenviron\Scripts\python.exe")
+sys.path.append(r"C:\Steveenviron\Scripts\python.exe")
 import os, webbrowser, requests
 import subprocess
 from bs4 import BeautifulSoup
