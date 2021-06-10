@@ -1,6 +1,8 @@
 import tkinter as tk
-import webbrowser, sys, requests
-sys.path.append(r"C:\Steveenviron\Scripts\python.exe")
+import webbrowser, sys, os
+os.chdir("C:\\")
+sys.path.append(r"C:\\PyEnviron\\Steveenviron\\Lib\\site-packages")
+import requests
 from bs4 import BeautifulSoup
 from time import sleep
 from googlesearch import *

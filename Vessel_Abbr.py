@@ -3,10 +3,11 @@
 #Grabs vessel abbreviations from vessel names based on static list
 #Can be programmed to handle an updating list at another date, hardcoded for
 #current list.
-
+import sys, os
+os.chdir("C:\\")
+sys.path.append(r"C:\\PyEnviron\\Steveenviron\\Lib\\site-packages")
 import tkinter as tk
-import sys
-sys.path.append(r"C:\Steveenviron\Scripts\python.exe")
+
 
 
 

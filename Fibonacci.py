@@ -1,6 +1,7 @@
 import tkinter as tk
-import sys
-sys.path.append(r"C:\Steveenviron\Scripts\python.exe")
+import sys, os
+os.chdir("C:\\")
+sys.path.append(r"C:\\PyEnviron\\Steveenviron\\Lib\\site-packages")
 
 
 #def defib(n):

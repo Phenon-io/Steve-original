@@ -1,8 +1,10 @@
+#python 3.9.5
 #Steve, the helpful python bot
-#version 1.7, yelling at webpages version
-import sys
-sys.path.append(r"C:\Steveenviron\Scripts\python.exe")
-import os, webbrowser, requests
+#version 1.8, PrettyPrinting to the stars
+import os, sys
+os.chdir("C:\\PyEnviron\\Steveenviron\\")
+sys.path.append(r"Lib\\site-packages")
+import webbrowser, requests
 import subprocess
 from bs4 import BeautifulSoup
 import tkinter as tk
@@ -36,34 +38,36 @@ space2.grid(row=0, column=2)
 
 w = tk.Label(root, text="Hello world, have a beautiful day")
 w.grid(row=0, column=1)
-canvas2 = tk.Canvas(root, width = 300, height = 25)
+canvas2 = tk.Canvas(root, width=300, height=25)
 canvas2.grid(row=1, column=1)
-canvas3 = tk.Canvas(root, width = 300, height = 25)
+canvas3 = tk.Canvas(root, width=300, height=25)
 canvas3.grid(row=2, column=1)
-canvas4 = tk.Canvas(root, width = 300, height = 25)
+canvas4 = tk.Canvas(root, width=300, height=25)
 canvas4.grid(row=3, column=1)
-canvas5 = tk.Canvas(root, width = 300, height = 25)
+canvas5 = tk.Canvas(root, width=300, height=25)
 canvas5.grid(row=4, column=1)
-canvas6 = tk.Canvas(root, width = 300, height = 25)
+canvas6 = tk.Canvas(root, width=300, height=25)
 canvas6.grid(row=5, column=1)
-canvas7 = tk.Canvas(root, width = 300, height = 25)
+canvas7 = tk.Canvas(root, width=300, height=25)
 canvas7.grid(row=6, column=1)
-canvas1 = tk.Canvas(root, width = 300, height = 25)
-canvas1.grid(row=7, column=1)
-x=tk.Label(root, text="Steve Ver 1.7")
-x.grid(row=8, column=1)
+canvas8 = tk.Canvas(root, width=300, height=25)
+canvas8.grid(row=7, column=1)
+canvas1 = tk.Canvas(root, width = 300, height=25)
+canvas1.grid(row=8, column=1)
+x=tk.Label(root, width=30, height=5, text="Steve Ver 1.7")
+x.grid(row=9, column=1)
 
 #modules
 def fib1():
     os.system('python Fibonacci.py')
-    return
+    
 #pending implementation
 def goog():
     os.system('Websearch_Module.py')
 
 def ves():
     os.system('python Vessel_Abbr.py')
-    return
+    
 
 def BI():
     url = "http://appcmotaprod01/Pasha.BI.YieldManagement/Pasha.BI.YieldManagement.application"
@@ -103,30 +107,34 @@ def gmp():
         os.system('C:\\Program^ Files\\OTA2\\AppStart.exe')    
     except Exception as exc: 
         print ('Unable to boot OTA, confirm OTA is in a default location\n %s' % (exc))
-
+def pprint():
+    os.system('python XML_Pretty_Print_Module.py')
                      
 
 #module buttons
 button2 = tk.Button (root, text='Fibonacci', command= fib1)
-canvas2.create_window(150, 15, window=button2)
+canvas2.create_window(150, 25, window=button2)
 
 button3 = tk.Button (root, text='Search a Subject', command= goog)
-canvas3.create_window(150, 15, window=button3)
+canvas3.create_window(150, 25, window=button3)
 
 button4 = tk.Button (root, text='Vessel Abbreviations', command= ves)
-canvas4.create_window(150, 15, window=button4)
+canvas4.create_window(150, 25, window=button4)
 
 button5 = tk.Button (root, text='BI Update', command= BI)
-canvas5.create_window(150, 15, window=button5)
+canvas5.create_window(150, 25, window=button5)
 
 button6 = tk.Button (root, text='N4 Access', command= N4)
-canvas6.create_window(150, 15, window=button6)
+canvas6.create_window(150, 25, window=button6)
 
 button7 = tk.Button (root, text='Good Morning Protocol', command= gmp)
-canvas7.create_window(150, 15, window=button7)
+canvas7.create_window(150, 25, window=button7)
+
+button8 = tk.Button (root, text='XML Pretty Printer', command= pprint)
+canvas8.create_window(150, 25, window=button8)
 
 button1 = tk.Button (root, text='Close Steve', command= root.destroy)
-canvas1.create_window(150, 15, window=button1)
+canvas1.create_window(150, 25, window=button1)
 
 
 root.mainloop()

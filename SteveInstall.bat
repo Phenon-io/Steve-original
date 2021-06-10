@@ -6,7 +6,7 @@ pause
 :start
 cls
 cd \
-cd C:\PyEnviron\Steveenviron\Scripts
+cd /d C:\PyEnviron\Steveenviron\Scripts
 pip install requests
 pip install bs4
 pip install googlesearch-python
