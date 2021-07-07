@@ -17,7 +17,7 @@ from random import randint
 
 
 #webbrowser selector for links
-chrome_browser = webbrowser.get("C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s")
+chrome_browser = webbrowser.get("C:/Program Files/Google/Chrome/Application/chrome.exe %s")
 
 #Tkinter frame
 root= tk.Tk()
@@ -48,14 +48,16 @@ canvas5 = tk.Canvas(root, width=300, height=25)
 canvas5.grid(row=4, column=1)
 canvas6 = tk.Canvas(root, width=300, height=25)
 canvas6.grid(row=5, column=1)
+canvas9 = tk.Canvas(root, width=300, height=25)
+canvas9.grid(row=6, column=1)
 canvas7 = tk.Canvas(root, width=300, height=25)
-canvas7.grid(row=6, column=1)
+canvas7.grid(row=7, column=1)
 canvas8 = tk.Canvas(root, width=300, height=25)
-canvas8.grid(row=7, column=1)
+canvas8.grid(row=8, column=1)
 canvas1 = tk.Canvas(root, width = 300, height=25)
-canvas1.grid(row=8, column=1)
+canvas1.grid(row=9, column=1)
 x=tk.Label(root, width=30, height=5, text="Steve Ver 1.7")
-x.grid(row=9, column=1)
+x.grid(row=10, column=1)
 
 #modules
 def fib1():
@@ -74,8 +76,12 @@ def BI():
     webbrowser.open(url)
 
 def N4():
-    url2 = "https://n4apps.hawaiistevedores.com/apex/"
-    chrome_browser.open(url2)
+    url = "https://n4apps.hawaiistevedores.com/apex/apex.jnlp"
+    chrome_browser.open(url)
+
+def N4S():
+    url = "http://10.1.50.82:9080/apex/apex.jnlp"
+    chrome_browser.open(url)
 
 def gmp():
     links = ['https://pashagroup.lightning.force.com/one/one.app', 'http://server1.vilden.net:8023/presto/presto', 'http://server1.vilden.net:8023/presto/presto', 'http://server1.vilden.net:8023/presto/presto', 'https://server1.vilden.net/cgi-wec/login.pgm'] 
@@ -127,6 +133,9 @@ canvas5.create_window(150, 25, window=button5)
 button6 = tk.Button (root, text='N4 Access', command= N4)
 canvas6.create_window(150, 25, window=button6)
 
+button9 = tk.Button (root, text='N4 Staging', command= N4S)
+canvas9.create_window(150, 25, window=button9)
+
 button7 = tk.Button (root, text='Good Morning Protocol', command= gmp)
 canvas7.create_window(150, 25, window=button7)
 
@@ -138,5 +147,3 @@ canvas1.create_window(150, 25, window=button1)
 
 
 root.mainloop()
-
-

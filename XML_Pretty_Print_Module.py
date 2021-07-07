@@ -43,7 +43,7 @@ def callback():
 
 
 def callback2():
-    print("Module closed")
+    print("Module Closed")
     quit()
     
 def callback3():
